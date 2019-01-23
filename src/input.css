@@ -1,0 +1,10 @@
+.input-line {
+  border-top: 2px solid #ffffff;
+  padding: 10px 0;
+  margin-top: 10px; }
+  .input-line input {
+    width: 100%;
+    padding: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px; }

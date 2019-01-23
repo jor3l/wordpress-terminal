@@ -1,0 +1,45 @@
+{
+  "scripts": {
+    "start": "npm run watch-css & webpack-dev-server --open --config webpack.dev.js",
+    "build": "npm run build-css & webpack -p --config webpack.prod.js",
+    "watch-css": "node-sass ./src/ -o ./src/ --recursive --watch",
+    "build-css": "node-sass ./src/ -o ./src/ --recursive"
+  },
+  "private": true,
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@babel/runtime": "^7.3.0",
+    "alertify.js": "^1.0.12",
+    "ascii-table": "0.0.9",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.11",
+    "mithril": "^1.1.6",
+    "moment": "^2.24.0",
+    "striptags": "^3.1.1",
+    "xss": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "i18n-webpack-plugin": "^1.0.0",
+    "lodash-webpack-plugin": "^0.11.5",
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "unused-files-webpack-plugin": "^3.4.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1",
+    "workbox-webpack-plugin": "^3.6.3"
+  }
+}
